@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST2</title>
+    <a href = 'test.html'>TEST</a>
+    <a href = 'test 3.html'>TEST3</a>
+</head>
+<body>
+<p>hi</p><br>
+<p>hello</p><br>
+<p>hi</p><br>
+<div id = 'demo'>
+    <p>some text</p>
+    <p>some other text</p>
+</div>
+<a class = "1", href = 'sololearn.com'>Home Link</a>
+<div id = 'demo1' style = "width:200px">
+    Some Text
+</div>
+<script>
+var arr = document.getElementsByTagName('p');
+for (var x = 0; x< arr.length; x++) {
+    arr[x].innerHTML = 'Hi there'
+}
+var a = document.getElementById('demo')
+var arr1 = a.childNodes;
+for (var x = 0; x<arr1.length; x++) {
+    arr1[x].innerHTML = 'new text';
+}
+var el = document.getElementsByClassName('1');
+el[0].href = 'test.html';
+var x = document.getElementById('demo1');
+x.style.color = 'red';
+x.style.width = '100px'
+</script>
+</body>
+</html>
