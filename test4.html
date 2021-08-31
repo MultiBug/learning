@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST4</title>
+</head>
+<body>
+<script>
+    const obj1 = {
+        a:0,
+        b:2,
+        c:4
+    };
+    const obj2 = Object.assign({c:5, d:6}, obj1);
+    document.writeln(obj2.c, obj2.d);
+    function magic(...nums) {
+        let sum = 0;
+        nums.filter(n => n % 2 == 0).map(el => sum += el);
+        return sum;
+    }
+    document.writeln((magic(1,2,3,4,5,6)) + '<br>')
+    let nums1 = [3,4,5];
+    let all = [1,2, ...nums1, 6];
+    document.writeln(all[3])
+    const square = num => num * num;
+    document.writeln(square(6) + 6);
+    class Add {
+        constructor(...words) {
+            this.words = words;
+        }
+        print() {
+            console.log("$" + this.words.join("$") + "$");
+        }
+    }
+
+    var x = new Add("hehe", "hoho", "haha", "hihi", "huhu");
+    var y = new Add("this", "is", "awesome");
+    var z = new Add("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit");
+    x.print();
+    y.print();
+    z.print();
+</script>
+</body>
+</html>
